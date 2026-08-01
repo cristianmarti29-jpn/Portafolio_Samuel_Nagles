@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Nombre — Portafolio DevSecOps en construcción</title>
+<meta name="description" content="Portafolio de Tu Nombre. Front-end hoy, DevSecOps en camino. Proyectos, roadmap de aprendizaje y contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#top" class="brand">
+      <span class="brand__mark">&gt;_</span>
+      <span class="brand__text">Samuel Nagles<span class="brand__dim">.dev</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#roadmap">Roadmap</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="status-chip" title="Estado del build">
+      <span class="dot dot--live" aria-hidden="true"></span> build: passing
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO / SCAN HEADER ===================== -->
+  <section class="hero" id="top">
+    <div class="hero__grid">
+      <div class="hero__meta">
+        <p class="eyebrow">$ whoami --scan</p>
+        <div class="scan-box" id="scanBox">
+          <p class="scan-line">TARGET&nbsp;&nbsp;&nbsp;&nbsp;: <span>Samuel Nagles</span></p>
+          <p class="scan-line">ROL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span>Full-Stack Developer</span></p>
+          <p class="scan-line">EN CAMINO : <span>Back-End · Cloud · DevSecOps</span></p>
+          <p class="scan-line">STATUS&nbsp;&nbsp;&nbsp; : <span class="status status--progress">EN PROGRESO</span></p>
+        </div>
+      </div>
+
+      <div class="hero__title">
+        <h1>
+          Construyo interfaces hoy.<br>
+          Aseguro sistemas mañana.
+        </h1>
+        <p class="hero__subtitle" id="typedSubtitle" aria-live="polite"></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="#roadmap">Ver mi roadmap</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROADMAP / PIPELINE ===================== -->
+  <section class="section" id="roadmap">
+    <div class="section__head">
+      <p class="eyebrow">// pipeline.yml</p>
+      <h2>Mi roadmap, como un pipeline</h2>
+      <p class="section__lead">
+        Este portafolio no es una foto fija: es un build que se actualiza en cada etapa.
+        Así avanza mi camino hacia DevSecOps.
+      </p>
+    </div>
+
+    <ol class="pipeline" id="pipeline">
+      <li class="stage stage--done">
+        <div class="stage__node"></div>
+        <div class="stage__body">
+          <span class="stage__index">01</span>
+          <h3>Fundamentos</h3>
+          <p>HTML, CSS, JavaScript, Git &amp; GitHub, lógica de programación.</p>
+          <span class="status status--done">COMPLETADO</span>
+        </div>
+      </li>
+
+      <li class="stage stage--active">
+        <div class="stage__node"></div>
+        <div class="stage__body">
+          <span class="stage__index">02</span>
+          <h3>Front-End</h3>
+          <p>Estás aquí — interfaces, accesibilidad, responsive, buenas prácticas de UI.</p>
+          <span class="status status--progress">EN PROGRESO</span>
+        </div>
+      </li>
+
+      <li class="stage">
+        <div class="stage__node"></div>
+        <div class="stage__body">
+          <span class="stage__index">03</span>
+          <h3>Back-End</h3>
+          <p>APIs, bases de datos, autenticación, arquitectura de servidor.</p>
+          <span class="status status--pending">PENDIENTE</span>
+        </div>
+      </li>
+
+      <li class="stage">
+        <div class="stage__node"></div>
+        <div class="stage__body">
+          <span class="stage__index">04</span>
+          <h3>Linux &amp; Redes</h3>
+          <p>Administración de sistemas, redes, scripting, línea de comandos.</p>
+          <span class="status status--pending">PENDIENTE</span>
+        </div>
+      </li>
+
+      <li class="stage">
+        <div class="stage__node"></div>
+        <div class="stage__body">
+          <span class="stage__index">05</span>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>CI/CD, contenedores, infraestructura como código, automatización.</p>
+          <span class="status status--pending">PENDIENTE</span>
+        </div>
+      </li>
+
+      <li class="stage">
+        <div class="stage__node"></div>
+        <div class="stage__body">
+          <span class="stage__index">06</span>
+          <h3>DevSecOps</h3>
+          <p>Seguridad ofensiva y defensiva integrada en cada etapa del ciclo de vida.</p>
+          <span class="status status--pending">META</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== PROYECTOS ===================== -->
+  <section class="section" id="proyectos">
+    <div class="section__head">
+      <p class="eyebrow">// proyectos.json</p>
+      <h2>Proyectos</h2>
+      <p class="section__lead">
+        Cada tarjeta es un build real: qué hice, con qué, y — cuando aplica — qué
+        decisiones de seguridad tomé en el camino.
+      </p>
+    </div>
+
+    <div class="filters" id="filters" role="tablist" aria-label="Filtrar proyectos por categoría">
+      <!-- generado por JS -->
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- generado por JS desde js/script.js -->
+    </div>
+
+    <p class="empty-state" id="emptyState" hidden>
+      No hay proyectos con este filtro todavía — vuelve pronto, esto crece con cada etapa del roadmap.
+    </p>
+  </section>
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section class="section" id="sobre-mi">
+    <div class="about">
+      <div class="about__text">
+        <p class="eyebrow">// about.md</p>
+        <h2>Sobre mí</h2>
+        <p>
+          Soy Tu Nombre. Empecé por front-end porque quería entender cómo se
+          construye lo que la gente realmente usa, antes de aprender a protegerlo.
+          Ahora mismo estoy afianzando HTML, CSS y JavaScript, documentando cada
+          proyecto y avanzando paso a paso por un roadmap que termina en DevSecOps.
+        </p>
+        <p>
+          No escondo que estoy en proceso. Prefiero mostrar el progreso real —
+          con sus etapas completadas, en curso y pendientes — a fingir que ya
+          llegué. Cada proyecto de este sitio tiene fecha y contexto: en qué
+          etapa del roadmap lo hice y qué aprendí.
+        </p>
+
+        <div class="stack">
+          <h3>Stack actual</h3>
+          <ul class="tags" id="stackTags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git / GitHub</li>
+            <li>Netlify</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about__log">
+        <p class="eyebrow">// bitácora</p>
+        <ul class="log" id="logList">
+          <li><span class="log__date">2026</span> Inicio del roadmap — fundamentos de programación.</li>
+          <li><span class="log__date">2026</span> Etapa actual: Front-End.</li>
+          <li><span class="log__date">Próximo</span> Back-End y primeros proyectos full-stack.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="section section--contact" id="contacto">
+    <div class="section__head">
+      <p class="eyebrow">// contacto.sh</p>
+      <h2>Hablemos</h2>
+      <p class="section__lead">
+        ¿Reclutas, colaboras o simplemente quieres comentar algún proyecto? Escríbeme.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:tu-email@ejemplo.com">
+        <span class="contact-card__label">Email</span>
+        <span class="contact-card__value">tu-email@ejemplo.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+        <span class="contact-card__label">GitHub</span>
+        <span class="contact-card__value">github.com/tu-usuario</span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">
+        <span class="contact-card__label">LinkedIn</span>
+        <span class="contact-card__value">linkedin.com/in/tu-usuario</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p>© <span id="year"></span> Tu Nombre — construido con HTML, CSS y JS, desplegado en Netlify.</p>
+    <p class="footer__status"><span class="dot dot--live" aria-hidden="true"></span> última actualización: etapa Front-End</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
