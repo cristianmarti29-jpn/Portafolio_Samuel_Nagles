@@ -178,8 +178,8 @@ button:focus-visible {
   grid-template-columns: 0.85fr 1.15fr;
   gap: var(--gap);
   align-items: center;
-  min-width: 0; 
 }
+.hero__grid > * { min-width: 0; }
 
 .scan-box {
   font-family: var(--font-mono);

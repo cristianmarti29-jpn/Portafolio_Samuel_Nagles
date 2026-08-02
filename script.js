@@ -10,13 +10,13 @@
    ========================================================= */
 const PROJECTS = [
   {
-    title: "EXOEM-EMPRESA",
+    title: "Proyecto de ejemplo — Landing responsive",
     description: "Landing page construida con HTML y CSS puro, maquetada mobile-first y desplegada en Netlify.",
     tags: ["web", "frontend"],
     security: null,
     links: [
-      { label: "Ver código", url: "https://github.com/cristianmarti29-jpn/exoem-jc.git" },
-      { label: "Ver demo", url: "https://keen-dodol-823058.netlify.app" }
+      { label: "Ver código", url: "https://github.com/tu-usuario/tu-repo" },
+      { label: "Ver demo", url: "https://tu-proyecto.netlify.app" }
     ]
   },
   {
