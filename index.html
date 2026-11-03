@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styless.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -26,6 +26,7 @@
     <nav class="nav" id="nav">
       <a href="#roadmap">Roadmap</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#certificados">Certificados</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -50,15 +51,15 @@
         <div class="scan-box" id="scanBox">
           <p class="scan-line">TARGET&nbsp;&nbsp;&nbsp;&nbsp;: <span>Samuel Nagles</span></p>
           <p class="scan-line">ROL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span>Full-Stack Developer</span></p>
-          <p class="scan-line">EN CAMINO : <span>Back-End · Cloud · DevSecOps</span></p>
-          <p class="scan-line">STATUS&nbsp;&nbsp;&nbsp; : <span class="status status--progress">EN PROGRESO</span></p>
+          <p class="scan-line">OBJETIVO&nbsp;&nbsp;: <span>Primer empleo en Seguridad / DevOps</span></p>
+          <p class="scan-line">STATUS&nbsp;&nbsp;&nbsp; : <span class="status status--done">DISPONIBLE</span></p>
         </div>
       </div>
 
       <div class="hero__title">
         <h1>
-          Construyo interfaces hoy.<br>
-          Aseguro sistemas mañana.
+          Construyo interfaces.<br>
+          Automatizo seguridad.
         </h1>
         <p class="hero__subtitle" id="typedSubtitle" aria-live="polite"></p>
         <div class="hero__actions">
@@ -76,7 +77,7 @@
       <h2>Mi roadmap, como un pipeline</h2>
       <p class="section__lead">
         Este portafolio no es una foto fija: es un build que se actualiza en cada etapa.
-        Así avanza mi camino hacia DevSecOps.
+        Este fue mi camino hacia DevSecOps.
       </p>
     </div>
 
@@ -91,53 +92,53 @@
         </div>
       </li>
 
-      <li class="stage stage--active">
+      <li class="stage stage--done">
         <div class="stage__node"></div>
         <div class="stage__body">
           <span class="stage__index">02</span>
           <h3>Front-End</h3>
-          <p>Estás aquí — interfaces, accesibilidad, responsive, buenas prácticas de UI.</p>
-          <span class="status status--progress">EN PROGRESO</span>
+          <p>Interfaces, accesibilidad, responsive, buenas prácticas de UI.</p>
+          <span class="status status--done">COMPLETADO</span>
         </div>
       </li>
 
-      <li class="stage">
+      <li class="stage stage--done">
         <div class="stage__node"></div>
         <div class="stage__body">
           <span class="stage__index">03</span>
           <h3>Back-End</h3>
           <p>APIs, bases de datos, autenticación, arquitectura de servidor.</p>
-          <span class="status status--pending">PENDIENTE</span>
+          <span class="status status--done">COMPLETADO</span>
         </div>
       </li>
 
-      <li class="stage">
+      <li class="stage stage--done">
         <div class="stage__node"></div>
         <div class="stage__body">
           <span class="stage__index">04</span>
           <h3>Linux &amp; Redes</h3>
-          <p>Administración de sistemas, redes, scripting, línea de comandos.</p>
-          <span class="status status--pending">PENDIENTE</span>
+          <p>Administración de sistemas, scripting, hardening, línea de comandos.</p>
+          <span class="status status--done">COMPLETADO</span>
         </div>
       </li>
 
-      <li class="stage">
+      <li class="stage stage--done">
         <div class="stage__node"></div>
         <div class="stage__body">
           <span class="stage__index">05</span>
           <h3>Cloud &amp; DevOps</h3>
-          <p>CI/CD, contenedores, infraestructura como código, automatización.</p>
-          <span class="status status--pending">PENDIENTE</span>
+          <p>CI/CD, contenedores, Kubernetes, infraestructura como código y automatización (Google Cloud y Microsoft AZ-400).</p>
+          <span class="status status--done">COMPLETADO</span>
         </div>
       </li>
 
-      <li class="stage">
+      <li class="stage stage--done">
         <div class="stage__node"></div>
         <div class="stage__body">
           <span class="stage__index">06</span>
           <h3>DevSecOps</h3>
           <p>Seguridad ofensiva y defensiva integrada en cada etapa del ciclo de vida.</p>
-          <span class="status status--pending">META</span>
+          <span class="status status--done">COMPLETADO</span>
         </div>
       </li>
     </ol>
@@ -162,9 +163,27 @@
       <!-- generado por JS desde js/script.js -->
     </div>
 
+    <nav class="pagination" id="pagination" aria-label="Paginación de proyectos" hidden></nav>
+
     <p class="empty-state" id="emptyState" hidden>
       No hay proyectos con este filtro todavía — vuelve pronto, esto crece con cada etapa del roadmap.
     </p>
+  </section>
+
+  <!-- ===================== CERTIFICADOS ===================== -->
+  <section class="section" id="certificados">
+    <div class="section__head">
+      <p class="eyebrow">// certificaciones.json</p>
+      <h2>Certificados</h2>
+      <p class="section__lead">
+        Formación que respalda lo que construyo. Los proyectos de arriba son la prueba;
+        esto es el contexto.
+      </p>
+    </div>
+
+    <div class="certs-grid" id="certsGrid">
+      <!-- generado por JS desde js/script.js -->
+    </div>
   </section>
 
   <!-- ===================== SOBRE MÍ ===================== -->
@@ -176,26 +195,19 @@
         <p>
           Soy Samuel Nagles. Empecé por front-end porque quería entender cómo se
           construye lo que la gente realmente usa, antes de aprender a protegerlo.
-          Ahora mismo estoy afianzando HTML, CSS y JavaScript, documentando cada
-          proyecto y avanzando paso a paso por un roadmap que termina en DevSecOps.
+          Ya construí varios sitios web y ahora llevo ese conocimiento hacia Linux,
+          scripting y seguridad: hardening, análisis de logs y herramientas de revisión
+          de código. Documento cada proyecto y completé un roadmap que termina en
+          DevSecOps. Ahora busco mi primera oportunidad.
         </p>
         <p>
-          No escondo que estoy en proceso. Prefiero mostrar el progreso real —
-          con sus etapas completadas, en curso y pendientes — a fingir que ya
-          llegué. Cada proyecto de este sitio tiene fecha y contexto: en qué
-          etapa del roadmap lo hice y qué aprendí.
+          Aprendo construyendo. Cada proyecto de este sitio documenta qué hice,
+          con qué herramientas y qué aprendí en el camino.
         </p>
 
         <div class="stack">
-          <h3>Stack actual</h3>
-          <ul class="tags" id="stackTags">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Git / GitHub</li>
-            <li>Netlify</li>
-            <li>Responsive Design</li>
-          </ul>
+          <h3>Stack</h3>
+          <div class="stack-groups" id="stackGroups"></div>
         </div>
       </div>
 
@@ -203,8 +215,10 @@
         <p class="eyebrow">// bitácora</p>
         <ul class="log" id="logList">
           <li><span class="log__date">2026</span> Inicio del roadmap — fundamentos de programación.</li>
-          <li><span class="log__date">2026</span> Etapa actual: Front-End.</li>
-          <li><span class="log__date">Próximo</span> Back-End y primeros proyectos full-stack.</li>
+          <li><span class="log__date">2026</span> Front-End completado: varios sitios web publicados.</li>
+          <li><span class="log__date">2026</span> Primeros proyectos de seguridad: hardening en Ubuntu, scanner pre-commit y analizador de logs.</li>
+          <li><span class="log__date">Oct 2026</span> Completé 4 certificaciones en Google Cloud, Kubernetes, Microsoft DevOps y Google Cybersecurity.</li>
+          <li><span class="log__date">Ahora</span> Roadmap completado. Buscando mi primera oportunidad en seguridad y DevOps.</li>
         </ul>
       </div>
     </div>
@@ -241,7 +255,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <p>© <span id="year"></span> Samuel Nagles — construido con HTML, CSS y JS, desplegado en Netlify.</p>
-    <p class="footer__status"><span class="dot dot--live" aria-hidden="true"></span> última actualización: etapa Front-End</p>
+    <p class="footer__status"><span class="dot dot--live" aria-hidden="true"></span> última actualización: roadmap completado</p>
   </div>
 </footer>
 
